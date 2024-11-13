@@ -1,0 +1,44 @@
+
+/*Paleta 1*/
+$azul:    #37627b;
+$habano:    #f5edc4;
+$naranja: #f4ab2c;
+$marron: #a35e24;
+$cafe: #582417;
+/*$primary-alejo: $alejo;*/
+/*Paleta 2*/ 
+
+$cafe-medio:    #89725b;
+$cafe-claro:    #c2aa89;
+$blanco: #f5f5f5;
+$gris: #a6aeb9;
+$gris-oscuro: #444046;
+
+
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2020/08/18/15/16/coffee-5498486_1280.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.btn-alejo { 
+    background-color: $cafe; 
+}
+
+.form-label {
+    color: $cafe-medio;
+    font-weight: 1700;
+}
+
+.border{
+    color: #582417;
+}
+
+.form-check-label{
+    color: #582417;
+}

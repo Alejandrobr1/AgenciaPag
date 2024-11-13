@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Café</title>
+    <h1 class="container text-center">Compra de Café Jhonatan Carmona</h1>
+    <!----><link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    
+  </head>
+
+<body>
+  <div class="container">
+
+    <h1>Base de datos de usuarios</h1>
+    <br>
+        <table class="table" id="dataTableUsuarios">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Fecha de Nacimiento</th>
+              <th scope="col">Lugar de Nacimiento</th>
+              <th scope="col">Estado Sistema</th>
+              
+            </tr>
+
+          </thead>
+          <tbody>
+
+
+          </tbody>
+        </table>
+
+  </div>
+    <script src="scripts/baseDatosUsuario.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<div class="modal" id="dataModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Actualizar Usuario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Agrega los campos con los IDs que se utilizan en el JavaScript -->
+        <div class="mb-3">
+          <label for="modalId" class="form-label">ID</label>
+          <input type="text" class="form-control" id="modalId" readonly>
+        </div>
+        <div class="mb-3">
+          <label for="modalNombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="modalNombre">
+        </div>
+        <div class="mb-3">
+          <label for="modalApellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="modalApellido">
+        </div>
+        <div class="mb-3">
+          <label for="modalFechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+          <input type="date" class="form-control" id="modalFechaNacimiento" required>
+        </div>
+        <div class="mb-3">
+          <label for="modalLugarNacimiento" class="form-label">Lugar de Nacimiento</label>
+          <input type="text" class="form-control" id="modalLugarNacimiento">
+        </div>
+        <div class="mb-3">
+          <label for="modalEstadoSistema" class="form-label">Estado Sistema</label>
+          <input type="text" class="form-control" id="modalEstadoSistema">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" onclick="service.updatePerson()">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer></footer>
+</html>

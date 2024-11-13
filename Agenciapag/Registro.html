@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Registro" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Café</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    
+  </head>
+
+<body>
+  <div class="container h1 text-center">
+    <p>Registro</p>
+  </div>
+    <div id="Isesion" class="container text-primary-emphasis">
+        
+
+        <!--<form action="/Recibos.html" method="POST" class="container-fluid border border-primary-subtle rounded-3">-->
+          <form class="row g-3" id="registroForm" method="post">
+            <div class="col-md-6">
+              <label for="inputId" class="form-label">Id</label>
+              <input type="text" class="form-control" id="inputId">
+            </div>
+            <div class="col-md-6">
+              <label for="inputNombre" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="inputNombre">
+            </div>
+            <div class="col-md-6">
+              <label for="inputApellido" class="form-label" >Apellidos</label>
+              <input type="text" class="form-control " id="inputApellido">
+            </div>
+            <div class="col-md-6">
+              <label for="inputLugarNacimiento" class="form-label">LugarNacimiento</label>
+              <input type="text" class="form-control" id="inputLugarNacimiento">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEstadoSistema" class="form-label">Estado</label>
+              <input type="text" class="form-control " id="inputEstadoSistema">
+            </div>
+            <div class="col-md-6">
+              <label for="inputTipoIdentificación" class="form-label">Tipo Identificación</label>
+              <select id="inputTipoIdentificación" class="form-select" required>
+                <option selected>Eliga una opción...</option>      
+                <option value="RC">Registro civil</option>
+                <option value="TI">Tarjeta de identidad</option>
+                <option value="CC">Cédula de ciudadanía</option>
+                <option value="TE">Tarjeta de extranjería</option>
+                <option value="CE">Cedula de extranjería</option>
+                <option value="NIT">NIT</option>
+                <option value="PP">Pasaporte</option>
+                <option value="PEP">Permiso especial de permanencia</option>
+                <option value="DIE">Documento de identificacion extranjero</option>
+                <option value="NUIP">NUIP</option>
+                <option value="FOREIGN_NIT">NIT extranjero</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+              <label for="inputCedula" class="form-label">Cédula</label>
+              <input type="text" class="form-control " id="inputCedula" required>
+               
+            </div>
+            <div class="col-md-6">
+              <label for="inputFechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+              <input type="date" class="form-control" id="inputFechaNacimiento" required>
+            </div>
+            
+            <div class="col-md-6">
+              <label for="inputDireccion" class="form-label">Dirección de Residencia</label>
+              <input type="text" class="form-control" id="inputDireccion" placeholder="Cra 123 #1-23">
+            </div>
+            <div class="col-md-6">
+              <label for="inputDireccion2" class="form-label">Dirección 2</label>
+              <input type="text" class="form-control" id="inputDireccion2" placeholder="Apartmento, piso, Casa ">
+              
+              <div class="col-md-4">
+                <label for="inputPais" class="form-label">Pais</label>
+                <select id="inputPais" class="form-select">
+                  <option selected>Eliga una opción...</option>
+                  <option>...</option>
+                </select>
+              </div>
+            <div class="col-md-4">
+              <label for="inputDepartamento" class="form-label">Departamento</label>
+              <select id="inputDepartamento" class="form-select">
+                <option selected>Eliga una opción...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="inputCiudad" class="form-label">Ciudad</label>
+              <select id="inputCiudad" class="form-select">
+                <option selected>Eliga una opción...</option>
+                <option>...</option>
+              </select>
+            </div>
+            
+            <div class="col-12">
+              
+              <button id="btnRegistro" type="submit" class="btn btn-primary mt-3 mb-3">Registrarse</button>
+            
+            </div>
+        
+            
+          </form>
+
+
+      </div>
+      <script src="scripts/usuario.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<footer></footer>
+</html>

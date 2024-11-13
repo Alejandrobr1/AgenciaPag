@@ -1,0 +1,45 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2020/08/18/15/16/coffee-5498486_1280.jpg");
+    background-color: #f5edc4;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.form-label {
+    color: #582417;
+    font-weight: 700;
+}
+
+.border{
+    color: #582417;
+}
+
+.form-check-label{
+    color: #582417;
+}
+
+h1, p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: unset;
+    color: #582417;
+}
+
+
+.container-fluid{
+    background-color: #a35e24;
+}
+
+
+/* #37627b
+#f5edc4
+#f4ab2c
+#a35e24
+#582417
+https://paletasdecolores.com/paleta-de-colores-2498/   */

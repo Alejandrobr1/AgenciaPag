@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia</title>
+    <h1>Recibo de Cafe</h1>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+    <div class="col-12 text-end">
+      <button type="submit" class="btn btn-primary">Conversion</button>
+    </div>
+    <div class="col-12 text-end">
+      <button type="submit" class="btn btn-primary">Generar Recibo</button>
+    </div>
+    <div class="col-12 text-end">
+      <button type="submit" class="btn btn-primary">Atras</button>
+    </div>
+  </div>
+  
+
+
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputComprador" class="form-label">Comprado a:</label>
+          <input type="text" class="form-control" id="inputComprador">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPuntos" class="form-label">Puntos adicionales</label>
+          <input type="number" class="form-control" id="inputPuntos">
+        </div>
+
+
+        <div class="col-12">
+          <label for="inputTabla" class="form-label">Tabla de Datos</label>
+          <input type="text"
+            class="table-responsive"
+          >
+            <table
+              class="table table-primary"
+            >
+              <thead>
+                <tr>
+                  <th scope="col">Calidad</th>
+                  <th scope="col">Peso kg</th>
+                  <th scope="col">Cantidad Costal</th>
+                  <th scope="col">Peso Costal</th>
+                  <th scope="col">Cantidad Estopa</th>
+                  <th scope="col">Peso estopa</th>
+                  <th scope="col">Factor Compra</th>
+                  <th scope="col">Precio Actual</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <td scope="row">Fila 1</td>
+                  <td>Dato 1</td>
+                  <td>Dato 2</td>
+                  <td>Dato 3</td>
+                  <td>Dato 4</td>
+                  <td>Dato 5</td>
+                  <td>Dato 6</td>
+                  <td>Dato 7</td>
+                </tr>
+                <tr class="">
+                  <td scope="row">Fila 2</td>
+                  <td>Dato 1</td>
+                  <td>Dato 2</td>
+                  <td>Dato 3</td>
+                  <td>Dato 4</td>
+                  <td>Dato 5</td>
+                  <td>Dato 6</td>
+                  <td>Dato 7</td>
+                </tr>
+                <tr class="">
+                  <td scope="row">Fila 3</td>
+                  <td>Dato 1</td>
+                  <td>Dato 2</td>
+                  <td>Dato 3</td>
+                  <td>Dato 4</td>
+                  <td>Dato 5</td>
+                  <td>Dato 6</td>
+                  <td>Dato 7</td>
+                  
+                </tr>
+                <tr class="">
+                  <td scope="row">Fila 4</td>
+                  <td>Dato 1</td>
+                  <td>Dato 2</td>
+                  <td>Dato 3</td>
+                  <td>Dato 4</td>
+                  <td>Dato 5</td>
+                  <td>Dato 6</td>
+                  <td>Dato 7</td>
+                </tr>
+                <tr class="">
+                  <td scope="row">Fila 5</td>
+                  <td>Dato 1</td>
+                  <td>Dato 2</td>
+                  <td>Dato 3</td>
+                  <td>Dato 4</td>
+                  <td>Dato 5</td>
+                  <td>Dato 6</td>
+                  <td>Dato 7</td>
+                </tr>
+                <tr class="">
+                  <td scope="row">Fila 6</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Dato 3</td>
+                  <td>Dato 4</td>
+                  <td>Dato 5</td>
+                  <td>Dato 6</td>
+                  <td>Dato 7</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6"></div>
+          <label for="inputNotas" class="form-label">Notas</label>
+          <input type="number" class="form-control" id="inputNotas">
+          </div>
+        
+          
+        
+      
+        <div class="col-md2-">
+          <label for="inputTotalDescargue" class="form-label">Total Descargue</label>
+          <input type="number" class="form-control" id="inputTotalDescargue">
+        </div>
+        <div class="col-12">
+            <label for="inputTotal" class="form-label">Total</label>
+            <input type="number" class="form-control" id="inputTotal">
+          </div>
+          <div class="col-md2-">
+            <label for="inputTotalIVA" class="form-label">IVA 19%</label>
+            <input type="number" class="form-control" id="inputTotalIVA">
+          </div>
+          <div class="col-md2-">
+            <label for="inputTotalmasIVA" class="form-label">Total mas IVA</label>
+            <input type="number" class="form-control" id="inputTotalmasIVA">
+          </div>
+          </div>
+        </div>
+        
+      </form>
+
+    </div>
+    <script src="scripts/usuario.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<footer></footer>
+</html>
